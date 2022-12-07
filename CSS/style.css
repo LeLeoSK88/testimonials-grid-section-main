@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+:root{
+    font-size: 13px;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    max-width: 1000px;
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+        "one one one two three"
+        "four five five five three"
+    ;
+    justify-content: center;
+}
+.ex{
+    background-color: #444;
+    color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+}
+.expirience1{
+    grid-area: one;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 300px;
+}
+.expirience2{
+    grid-area: two;
+    background-color: hsl(217, 19%, 35%);
+}
+.expirience3{
+    grid-area: three;
+    background-color: hsl(0, 0%, 100%);
+    color: #000;
+}
+.expirience4{
+    grid-area: four;
+    background-color: hsl(0, 0%, 100%);
+    color: #000;
+}
+.expirience5{
+    grid-area: five;
+    background-color: hsl(219, 29%, 14%);
+}
+
+/* FOTOS PERFIL AQUI  daniel */
+.photo-perfil img{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+}
+.verificado{
+    font-size: 0.9rem;
+    color: hsl(210, 46%, 95%);
+}
+.verificado span{
+    font-size: 0.7rem;
+    color: hsl(0, 0%, 81%);
+}
+
+
+.sub-titulo{
+    color: hsl(210, 46%, 95%);
+    font-size: 1.3rem;
+    margin: 15px 0px;
+    font-weight: 600;
+}
+.relato{
+    color: hsl(0, 0%, 81%);
+    font-size: 0.9rem;
+    line-height: 16px;
+}
+
+/* perfil kira e Jannete */
+.expirience4 .verificado,
+.expirience3 .verificado{
+    color: #000;
+}
+.expirience4 .sub-titulo,
+.expirience3 .sub-titulo{
+    color: #000;
+    font-weight: 400;
+}
+.expirience4 .relato,
+.expirience3 .relato{
+    color: #aaa;
+}
+.expirience3 .relato{
+    line-height: 17px;
+    font-size: 1rem;
+}
+/* janette */
+.expirience4 .sub-titulo{
+    font-size: 1.5rem;
+}
+
+
+/* perfil patrick */
+.expirience5 .sub-titulo{
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+
+/* MOBEL  */
+
+@media (max-width:375px ) {
+    body{
+        display: grid;
+        margin: 20px 20px;
+    }
+    .container{
+        display: grid;
+        gap: 10px;
+        grid-template-areas: 
+            "one"
+            "one" 
+            "one" 
+            "two" 
+            "four" 
+            "five" 
+            "five" 
+            "five"
+            "three"
+            "three"
+        ;
+    }
+    .expirience1{
+        background-position-x: 150px;
+    }
+}
